@@ -1,0 +1,13 @@
+@api = http://localhost:5000/entregas
+GET {{api}}
+###
+POST {{api}}
+Content-Type: application/json
+
+{
+    "tienda_id" : 143,
+    "producto_id" : 1,
+    "enviado" : null
+}
+###
+GET {{api}}/234
