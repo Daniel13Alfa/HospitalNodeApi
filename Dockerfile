@@ -1,15 +1,14 @@
-FROM node:16
-#FROM node:16-alpine 17
-#working dir
-WORKDIR /usr/src/app
-COPY package*.json ./
-#CMD [ "npm","start"]
-RUN npm install 
+FROM node:16-alpine
+
+WORKDIR /app
 
 COPY . .
 
-RUN npm run build
+RUN npm install 
+
+#RUN npm run build
 #5000 1337
 EXPOSE 5000
 
-CMD [ "node", "build/server.js"]
+#CMD [ "node", "build/server.js"]
+CMD [ "yarn", "dev"]
