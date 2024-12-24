@@ -1,9 +1,9 @@
 import sql from 'mssql'
 const dbSettings = {
-    user: 'alfarodany_SQLLogin_2',
-    password: '4a8mwep3u4',
-    server: 'hospitalApi.mssql.somee.com',
-    database: 'hospitalApi',
+    user: 'alfarodany_SQLLogin_3',
+    password: 'b82xxsmxqn',
+    server: 'hospitalReportes.mssql.somee.com',
+    database: 'hospitalReportes',
     requestTimeout: 12000000,
     options: {
         encrypt: true,
